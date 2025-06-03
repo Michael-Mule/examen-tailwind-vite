@@ -4,9 +4,71 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Examen Tailwind - Vite</title>
+    <title>Examen Tailwind</title>
   </head>
-  <body class="bg-gray-900">
+  <body class="bg-gray-100 text-gray-900">
+    <!-- ########## HEADER ########## -->
+    <header class="py-8">
+      <nav class="container mx-auto px-4 flex justify-between lg:px-0">
+        <a href="#" class="text-2xl font-semibold">Logo</a>
+        <button class="lg:hidden">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-menu-icon lucide-menu"
+          >
+            <path d="M4 12h16" />
+            <path d="M4 18h16" />
+            <path d="M4 6h16" />
+          </svg>
+        </button>
+        <ul class="hidden lg:flex lg:space-x-8">
+          <li><a href="#" class="hover:text-blue-500">Features</a></li>
+          <li><a href="#" class="hover:text-blue-500">Pricing</a></li>
+          <li><a href="#" class="hover:text-blue-500">About</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- ########## MAIN ########## -->
+    <main class="container mx-auto px-4 lg:px-0">
+      <section class="grid py-20 items-center gap-16 lg:grid-cols-2">
+        <img
+          src="./src/img/image-1.avif"
+          alt="Product-feature-illustration"
+          class="rounded-2xl"
+        />
+        <div>
+          <h1 class="text-4xl font-bold pb-8">Nice Features</h1>
+          <p class="text-gray-600 text-xl pb-8 lg:text-2xl">
+            Lorem ipsum dolor sit amet, consec adipiscing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Enim ad minim
+            veniam, quis nostrud exercitation ullamco nisi equi.
+          </p>
+          <ul
+            class="text-gray-600 list-image-[url(src/img/circle.svg)] list-inside grid lg:grid-cols-2"
+          >
+            <li class="pb-2">Unlimited domain names.</li>
+            <li class="pb-2">150+ components.</li>
+            <li class="pb-2">Lifetime updates.</li>
+            <li class="pb-2">24/7 technical support.</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <!-- ########## FOOTER ########## -->
+    <footer class="container mx-auto py-8 px-4 lg:px-0">
+      <p class="text-gray-400">&copy;2023 EAFC Fléron</p>
+    </footer>
+
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
